@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f7f7f2;
+  color: #222;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.date {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.place {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.dataBlock {
+  padding: 18px 0;
+  border-top: 1px solid #ecece6;
+}
+
+.label {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 3.1rem;
+  font-weight: 850;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+}
+
+.unit {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.dangerLine {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.dangerIcon {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.dangerText {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.updateButton {
+  width: 100%;
+  margin-top: 24px;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 999px;
+  background: #222;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.updateButton:active {
+  transform: translateY(1px);
+  opacity: 0.85;
+}
+
+.updatedAt {
+  margin-top: 16px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.message {
+  margin-top: 10px;
+  text-align: center;
+  color: #b00020;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+}
+
+.loading {
+  opacity: 0.55;
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding: 24px 20px 22px;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+
+  .value {
+    font-size: 2.75rem;
+  }
+}
