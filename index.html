@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>日報用（岡山版）</title>
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="manifest" href="./manifest.json" />
+
+  <meta name="theme-color" content="#f7f7f2" />
+</head>
+
+<body>
+  <main class="app">
+    <section class="card">
+      <div id="dateText" class="date">----年--月--日（-）</div>
+
+      <div class="place">岡山</div>
+
+      <div class="dataBlock">
+        <div class="label">最高気温</div>
+        <div class="value">
+          <span id="tempMax">--</span><span class="unit">℃</span>
+        </div>
+      </div>
+
+      <div class="dataBlock">
+        <div class="label">WBGT</div>
+        <div class="value">
+          <span id="wbgt">--</span>
+        </div>
+      </div>
+
+      <div class="dataBlock">
+        <div class="label">危険度</div>
+        <div class="dangerLine">
+          <span id="dangerIcon" class="dangerIcon">--</span>
+          <span id="dangerText" class="dangerText">--</span>
+        </div>
+      </div>
+
+      <div class="dataBlock">
+        <div class="label">天気</div>
+        <div class="value">
+          <span id="weather">--</span>
+        </div>
+      </div>
+
+      <button id="updateButton" class="updateButton">更新</button>
+
+      <div id="updatedAt" class="updatedAt">最終取得 --:--</div>
+      <div id="message" class="message"></div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
